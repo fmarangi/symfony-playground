@@ -1,0 +1,11 @@
+---
+services:
+  backend:
+    image: devenv-shop-composer:latest
+    user: devuser
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+    working_dir: /app
+    entrypoint: ./symfony server:start --port 3000 --allow-http

@@ -2,4 +2,6 @@ controllers:
     resource:
         path: ../src/Controller/
         namespace: App\Controller
+    prefix: /v1/catalog
+    name_prefix: api_catalog
     type: attribute
